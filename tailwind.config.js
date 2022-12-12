@@ -11,12 +11,13 @@ module.exports = {
         accent:'#8f9fbc',
         body:'#f9fbfe',
         dark:'#181818',
-        lightDark:'#222'
+        lightDark:'#222',
+        yellow:'#ffc107'
       },
       fontFamily:{
         dmSans:['DM Sans','sans-serif']
       }
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }

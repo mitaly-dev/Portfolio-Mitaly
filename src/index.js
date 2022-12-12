@@ -4,12 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import DashboardProvider from './context/DashboardProvider';
+import toast, { Toaster } from 'react-hot-toast';
+import { ApiProvider } from '@reduxjs/toolkit/dist/query/react';
+import { ProjectApi } from './Redux/ProjectApi';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <DashboardProvider>
-    <App />
+    <ApiProvider api={ProjectApi}>
+      <Toaster />
+      <App />
+    </ApiProvider>
     </DashboardProvider>
   </React.StrictMode>
 );

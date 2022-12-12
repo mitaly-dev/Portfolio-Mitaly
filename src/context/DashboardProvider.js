@@ -4,7 +4,7 @@ import { createContext } from 'react';
 
 export const DashboardContext = createContext()
 const DashboardProvider = ({children}) => {
-    const [sidebarOpen,setSidebarOpen] = useState(false)
+    const [sidebarOpen,setSidebarOpen] = useState(true)
     const [menuName,setMenuName] = useState('')
     const [dark,setDark] = useState(false)
     const [showSidebar,setShowSidebar] = useState(false)

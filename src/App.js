@@ -1,12 +1,12 @@
 import { useContext } from 'react';
 import {RouterProvider } from 'react-router-dom';
-import { DashboardContext } from './context/DashboardProvider';
 import { router } from './routes/Route';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
-  const {dark} = useContext(DashboardContext)
   return (
-    <div className={`${dark && 'dark'}`}>
+    <div className='dark'>
      <RouterProvider router={router}></RouterProvider>
     </div>
   );

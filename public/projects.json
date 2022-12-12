@@ -1,0 +1,38 @@
+[
+    {
+      "index": "1",
+      "name": "Furniture-Market ",
+      "clientSideLink": "https://github.com/mitaly-dev/Furniture-Market-clients",
+      "serverSideLink": "https://github.com/mitaly-dev/Furniture-Market-server",
+      "liveSite": "https://furniture-market-f4a94.web.app/",
+      "picture": "https://i.ibb.co/xGrbF3c/project1.png",
+      "picture2": "https://i.ibb.co/rsPB8tL/furniture2.png",
+      "picture3": "https://i.ibb.co/JKj8k1p/furniture3.png",
+      "picture4": "https://i.ibb.co/JpPFMkf/furniture4.png",
+      "description":"Users can register as a buyer or a seller. Buyers,Sellers and Admin have different dashboard and they can manage . Buyer can order the product and can add products to their wishlist and pay.Buyers will see: My orders,My wishlist ,Sellers will see: My Products , My buyers . Sellers can add his product. Admin will see : All Sellers, All Buyers, Reported Items.Admin can delete Reported Items ,Buyers and sellers. Admin can verify any seller if he wants."
+    },
+    {
+      "index": "2",
+      "name": "HomemadeCrunch",
+      "clientSideLink": "https://github.com/mitaly-dev/HomemadeCrunch-clients-side",
+      "serverSideLink": "https://github.com/mitaly-dev/-HomemadeCrunch-server-side",
+      "liveSite": "https://homemadecrunch-494be.web.app/",
+      "picture": "https://i.ibb.co/P5T0SFR/project2.png",
+      "picture2": "https://i.ibb.co/mzJ8PJD/homemade2.png",
+      "picture3": "https://i.ibb.co/ySXB4ZL/homemade3.png",
+      "picture4": "https://i.ibb.co/5KYgdvj/homemade4.png",
+      "description":"Email-password , Google and Github authentication. there is a system to logout from the website.Users can create reviews for any service ,users only see his reviews if he is logged in and users can edit and delete his review.There is a page to add service where new service can be added with all the information of the service"
+    },
+    {
+      "index": "3",
+      "name": "TeachTech",
+      "clientSideLink": "https://github.com/mitaly-dev/TeachTech-clients-side",
+      "serverSideLink": "https://github.com/mitaly-dev/TeachTech-server-side",
+      "liveSite": "https://teachtech-a348e.web.app/",
+      "picture": "https://i.ibb.co/9N4tFDn/project3.png",
+      "picture2": "https://i.ibb.co/CMW78GC/teach2.png",
+      "picture3": "https://i.ibb.co/TcXSQjL/teach3.png",
+      "picture4": "https://i.ibb.co/mNK8Vfd/teach4.png",
+      "description":"Email-password , Google and Github authentication. Dark-light mood has been implemented.Anyone can download the course details document . Users can take Premium access if they want.Users can select any payment method,Transaction Id will be given to them after successful payment."
+    }
+  ]
