@@ -23,15 +23,15 @@ const Profile = () => {
                         <p rel="noopener noreferrer" href="#" className="text-[15px] hover:underline dark:text-gray-400">Full Stack Web Developer</p>
                     </span>
             </div>
-            <div className="divide-y divide-gray-700">
-                <a download={"Resume"} href='https://drive.google.com/file/d/1JdPnwm8h_zLjjZMSeokUHaqo3oiKEShO/view?usp=share_link' className='py-4 px-4 rounded-lg mt-5 flex items-center'>
+            <div className="divide-y divide-gray-700 text-[#7a7a7a]">
+                <a download={"Resume"} href='https://drive.google.com/file/d/1JdPnwm8h_zLjjZMSeokUHaqo3oiKEShO/view?usp=share_link' className='py-4 px-4 rounded-lg mt-2 flex items-center' target="_blank">
                 Download Resume
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4 ml-3">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                 </svg>
                 </a>
             </div>
-            <div className='mx-4 text-[#7a7a7a;]'>
+            <div className='mx-4 text-[#7a7a7a]'>
                 <h3 className='mb-3'>Skills</h3>
                
                 <div className='mb-2'>

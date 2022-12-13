@@ -8,7 +8,7 @@ const ProjectDetails = () => {
     const location = useLocation()
     const {id} = location.state
     const {data:project,isLoading,error} = useGetProjectQuery(id)
-    
+
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
@@ -21,10 +21,10 @@ const ProjectDetails = () => {
     const {liveSite,serverSideLink,clientSideLink,name,picture,picture2,picture3,picture4,description,_id} = project
 
     return (
-      <section className="dark:bg-lightDark dark:text-gray-100 min-h-[100vh]  flex items-center px-10">
+      <section className="dark:bg-lightDark dark:text-gray-100 min-h-[80vh]  flex items-center px-10">
         <div className="container flex flex-col-reverse mx-auto lg:flex-row items-center bg-dark">
             <div className="flex flex-col px-6 py-8 space-y-2 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 ">
-            <h3 className='font-semibold text-2xl'>{name}</h3>
+                <h3 className='font-semibold text-2xl'>{name}</h3>
                 <div className="flex space-x-2 sm:space-x-4">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex-shrink-0 w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
@@ -47,16 +47,16 @@ const ProjectDetails = () => {
             <div className="lg:w-1/2 xl:w-3/5">
                 <div className="grid grid-cols-2 gap-5 p-4 md:p-5 lg:p-5 items-center">
                     <div>
-                        <img src={picture} alt="project_image" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
+                        <img src={picture ? picture : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8uia93jUhtlaNB5s9-xnmhh8tek0NsQ0BMg&usqp=CAU'} alt="project_image" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
                     </div>
                     <div>
-                        <img src={picture2} alt="project_image" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
+                        <img src={picture2 ? picture2 : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8uia93jUhtlaNB5s9-xnmhh8tek0NsQ0BMg&usqp=CAU'} alt="project_image" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
                     </div>
                     <div>
-                        <img src={picture3} alt="project_image" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
+                        <img src={picture3 ? picture3 : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8uia93jUhtlaNB5s9-xnmhh8tek0NsQ0BMg&usqp=CAU'} alt="project_image" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
                     </div>
                     <div>
-                        <img src={picture4} alt="project_image" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
+                        <img src={picture4 ? picture4 : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8uia93jUhtlaNB5s9-xnmhh8tek0NsQ0BMg&usqp=CAU'} alt="project_image" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
                     </div>
                 </div>
             </div>

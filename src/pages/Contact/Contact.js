@@ -1,9 +1,12 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 
 const Contact = () => {
     const form = useRef();
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     const sendEmail = (e) => {
       e.preventDefault();
@@ -19,8 +22,8 @@ const Contact = () => {
         });
     };
     return (
-       <div className='bg-dark w-full min-h-screen font-dmSans'>
-         <div className='w-full md:w-7/12 p-10 text-white m-auto py-16'>
+    <div className='bg-dark w-full min-h-screen font-dmSans'>
+        <div className='w-full lg:w-7/12 p-10 text-white m-auto py-16'>
             <h3 className='text-lg mb-4'>Get In Touch</h3>
             <form ref={form} onSubmit={sendEmail} className="flex flex-col ">
                 <label>Name</label>
@@ -32,7 +35,7 @@ const Contact = () => {
                 <input type="submit" value="Send" className='rounded-md py-3 mt-2 bg-yellow cursor-pointer font-semibold text-black'/>
             </form>
         </div>
-       </div>
+    </div>
     );
 };
 

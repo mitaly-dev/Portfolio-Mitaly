@@ -6,13 +6,13 @@ const Banner = () => {
         <div className="relative font-dmSans z-10">
         <img
           src={banner}
-          className="absolute bg-cover inset-0 w-full h-full"
+          className="absolute p-5 sm:p-10 object-cover  lg:px-28 inset-0 w-full h-full"
           alt=""
         />
-        <div className="relative bg-gray-900 bg-opacity-75 min-h-[80vh] z-10">
+        <div className="relative bg-dark bg-opacity-75 min-h-[80vh] md:min-h-[90vh] z-10">
           <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div className="flex flex-col items-center justify-between xl:flex-row">
-              <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12 mt-20 font-dmSans" >
+            <div className="flex flex-col items-center justify-between xl:flex-row" data-aos="fade-down">
+              <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12 md:mt-24 font-dmSans pl-2 lg:pl-20" >
                 <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
                 Discover my Amazing <br className="hidden md:block" />
                 Art Space!
